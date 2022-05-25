@@ -6,7 +6,7 @@
 /*   By: porg <porg@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 16:24:30 by porg              #+#    #+#             */
-/*   Updated: 2022/05/17 15:54:50 by jlaurent         ###   ########.fr       */
+/*   Updated: 2022/05/22 15:54:39 by porg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	ft_putchar(t_print *tab, char c);
 void	ft_putuns(t_print *tab, unsigned int n);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(const char *str);
+size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize);
+char	**ft_split(char const *s, char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 long	ft_atoi(char *nb);

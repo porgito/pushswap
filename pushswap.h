@@ -6,7 +6,7 @@
 /*   By: jlaurent <jlaurent@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 16:46:02 by jlaurent          #+#    #+#             */
-/*   Updated: 2022/05/18 17:15:35 by jlaurent         ###   ########.fr       */
+/*   Updated: 2022/05/25 23:06:39 by porg             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_data{
 	long	big;
 	int		nba;
 	int		nbb;
+	int		nbarg;
 	int		nbop;
 	int		mid;
 	int		q1;
@@ -83,6 +84,10 @@ void	pushlast(t_data *data);
 int		check(t_data *data);
 int		checkdup(t_data *data);
 void	checkdup1(t_data *data);
+void	checkarg(int argc, char ** argv);
+void	checkarg2(char *argv);
+void	initvar(t_data *data, int argc);
+void	split(t_data *data, char *argv);
 void	freeall(t_data *data);
 
 #endif
